@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.formation.controller.HelloController;
@@ -25,4 +26,8 @@ public class AppConfig implements WebMvcConfigurer {
 	public UserInteraction UserInteraction() {
 		return new UserInteraction();
 	}
+	
+	public void configureViewResolvers(ViewResolverRegistry registry) {
+		registry.jsp("/WEB-INF/views/",".jsp");
+		}
 }

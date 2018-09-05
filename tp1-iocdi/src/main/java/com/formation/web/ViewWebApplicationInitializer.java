@@ -30,7 +30,7 @@ public class ViewWebApplicationInitializer implements WebApplicationInitializer 
 	registration.addMapping("/humancontact/*");
 	
 	FilterRegistration.Dynamic encodingFilter = servletContext.addFilter("utf8­encoding", new CharacterEncodingFilter());
-	encodingFilter.setInitParameter("encoding", "utf-8");
+	encodingFilter.setInitParameter("encoding", "UTF-8");
 	encodingFilter.setInitParameter("forceEncoding", "true");
 	encodingFilter.addMappingForUrlPatterns(null, false, "/*");
 

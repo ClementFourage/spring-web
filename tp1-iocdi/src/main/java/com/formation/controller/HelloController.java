@@ -21,7 +21,7 @@ public class HelloController {
 	@GetMapping("/variable/{user}")
 	@ResponseBody
 	public String getHelloVariable(@PathVariable String user) {
-		return MessageFormat.format("Hi {0}", user);
+		return MessageFormat.format("Hi {0} !!!!", user);
 	}
 	
 }
