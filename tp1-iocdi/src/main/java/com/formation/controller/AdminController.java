@@ -31,17 +31,20 @@ public class AdminController {
 		message1.setMessage("Shut up and take my money");
 		message1.setHeure(LocalDateTime.now());
 		
+		Message message2 = new Message();
+		message2.setExpediteur("Fry");
+		message2.setDestinataire("Bender");
+		message2.setMessage("Shut up and eat my money");
+		message2.setHeure(LocalDateTime.now());
+		
 		messages.add(message1);
+		messages.add(message2);
 		
 		modelAndView.addObject("msg", messages);
 		modelAndView.setViewName("list");
 		
 		return modelAndView;
 		
-		
-		
-		
-	
 	}
 
 }

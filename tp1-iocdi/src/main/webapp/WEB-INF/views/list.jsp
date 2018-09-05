@@ -33,9 +33,8 @@
 		</div>
 	</nav>
 
-	<h1>Les collaborateurs</h1>
-
 	<div class="container-fluid">
+		<h1>Administration des messages</h1>
 		<div class=" row">
 			<div class="col-12 ">
 				<button type="button" class="btn btn-outline-dark float-right">Créer un message</button>
@@ -43,7 +42,7 @@
 		</div>
 	
 		<form>
-			<table class="table mt-4">
+			<table class="table mt-2">
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col">Expéditeur</th>
@@ -60,6 +59,7 @@
 							<th><c:out value="${v.destinataire}"><th></c:out>
 							<th><c:out value="${v.message}"><th></c:out>
 							<th><c:out value="${v.heure}"><th></c:out>
+							<th 
 						</tr>
 					</c:forEach>
 					
