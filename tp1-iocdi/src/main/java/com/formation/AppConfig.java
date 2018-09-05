@@ -25,5 +25,4 @@ public class AppConfig implements WebMvcConfigurer {
 	public UserInteraction UserInteraction() {
 		return new UserInteraction();
 	}
-	
 }
