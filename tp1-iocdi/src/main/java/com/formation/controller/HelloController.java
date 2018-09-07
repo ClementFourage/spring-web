@@ -12,16 +12,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/healthcheck")
 public class HelloController {
 	
-	@GetMapping("/simple")
+	@GetMapping("/status")
 	@ResponseBody
-	public String getSimple() {
+	public String getstatus() {
 		return "Ok";
 	}
 	
-	@GetMapping("/variable/{user}")
+	@GetMapping("/variable/{name}")
 	@ResponseBody
-	public String getHelloVariable(@PathVariable String user) {
-		return MessageFormat.format("Hi {0} !!!!", user);
+	public String getHelloVariable(@PathVariable String name) {
+		return MessageFormat.format("Hi {0} !!!!", name);
 	}
 	
 }

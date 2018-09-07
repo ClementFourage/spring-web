@@ -4,13 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<title>Spring JSP</title>
+<title>AdministrationMessages</title>
 
 </head>
 
@@ -37,7 +37,7 @@
 		<h1>Administration des messages</h1>
 		<div class=" row">
 			<div class="col-12 ">
-				<button type="button" class="btn btn-outline-dark float-right">Créer un message</button>
+				<a href="http://localhost:8080/humancontact/admin/messages/new" class="btn btn-outline-dark float-right active" role="button" aria-pressed="true">Créer un message</a>
 			</div>
 		</div>
 	
@@ -59,7 +59,6 @@
 							<th><c:out value="${v.destinataire}"><th></c:out>
 							<th><c:out value="${v.message}"><th></c:out>
 							<th><c:out value="${v.heure}"><th></c:out>
-							<th 
 						</tr>
 					</c:forEach>
 					

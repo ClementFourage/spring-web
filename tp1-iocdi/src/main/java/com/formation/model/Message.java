@@ -8,8 +8,7 @@ public class Message {
 	private String destinataire;
 	private String message;
 	private LocalDateTime heure;
-	
-	
+
 	public String getExpediteur() {
 		return expediteur;
 	}
